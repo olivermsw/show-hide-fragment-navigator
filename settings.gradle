@@ -1,0 +1,3 @@
+include ':show-hide-fragment-navigator'
+include ':app'
+rootProject.name = "ShowHideFragmentNavigator"

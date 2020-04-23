@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/blank1Fragment"
+    tools:ignore="UnusedNavigation">
+
+    <show_hide_fragment
+        android:id="@+id/blank1Fragment"
+        android:name="com.olimsw.showhidefragmentnavigator.Blank1Fragment"
+        android:label="fragment_blank1"
+        tools:layout="@layout/fragment_blank1">
+        <action
+            android:id="@+id/action_blank1Fragment_to_blank2Fragment"
+            app:destination="@id/blank2Fragment" />
+        <action
+            android:id="@+id/action_blank1Fragment_to_blank3Fragment"
+            app:destination="@id/blank3Fragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </show_hide_fragment>
+    <show_hide_fragment
+        android:id="@+id/blank2Fragment"
+        android:name="com.olimsw.showhidefragmentnavigator.Blank2Fragment"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_blank2" />
+    <show_hide_fragment
+        android:id="@+id/blank3Fragment"
+        android:name="com.olimsw.showhidefragmentnavigator.Blank3Fragment"
+        android:label="fragment_blank3"
+        tools:layout="@layout/fragment_blank3">
+        <action
+            android:id="@+id/action_blank3Fragment_to_blank4Fragment"
+            app:destination="@id/blank4Fragment" />
+    </show_hide_fragment>
+    <show_hide_fragment
+        android:id="@+id/blank4Fragment"
+        android:name="com.olimsw.showhidefragmentnavigator.Blank4Fragment"
+        android:label="fragment_blank4"
+        tools:layout="@layout/fragment_blank4">
+        <action
+            android:id="@+id/action_blank4Fragment_to_blank5Fragment"
+            app:enterAnim="@anim/no"
+            app:exitAnim="@anim/no"
+            app:popEnterAnim="@anim/no"
+            app:popExitAnim="@anim/no"
+            app:destination="@id/blank5Fragment" />
+    </show_hide_fragment>
+    <show_hide_fragment
+        android:id="@+id/blank5Fragment"
+        android:name="com.olimsw.showhidefragmentnavigator.Blank5Fragment"
+        android:label="fragment_blank5"
+        tools:layout="@layout/fragment_blank5">
+        <action
+            android:id="@+id/action_blank5Fragment_to_blank3Fragment"
+            app:popUpTo="@id/blank3Fragment" />
+    </show_hide_fragment>
+</navigation>
