@@ -105,12 +105,11 @@ public class ShowHideFragmentNavigator extends Navigator<FragmentNavigator.Desti
                 className, args);
         frag.setArguments(args);
         final FragmentTransaction ft = mFragmentManager.beginTransaction();
-
-        int enterAnim = navOptions != null ? navOptions.getEnterAnim() : -1;
-        int exitAnim = navOptions != null ? navOptions.getExitAnim() : -1;
-        int popEnterAnim = navOptions != null ? navOptions.getPopEnterAnim() : -1;
-        int popExitAnim = navOptions != null ? navOptions.getPopExitAnim() : -1;
         if (mFragmentManager.getFragments().size() > 0) {
+            int enterAnim = navOptions != null ? navOptions.getEnterAnim() : -1;
+            int exitAnim = navOptions != null ? navOptions.getExitAnim() : -1;
+            int popEnterAnim = navOptions != null ? navOptions.getPopEnterAnim() : -1;
+            int popExitAnim = navOptions != null ? navOptions.getPopExitAnim() : -1;
             if (enterAnim != -1 || exitAnim != -1 || popEnterAnim != -1 || popExitAnim != -1) {
                 enterAnim = enterAnim != -1 ? enterAnim : this.mEnterAnim;
                 exitAnim = exitAnim != -1 ? exitAnim : this.mExitAnim;
