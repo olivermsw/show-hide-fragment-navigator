@@ -1,5 +1,7 @@
 # [show-hide-fragment-navigator](https://github.com/olivermsw/show-hide-fragment-navigator)
 
+[![](https://jitpack.io/v/olivermsw/show-hide-fragment-navigator.svg)](https://jitpack.io/#olivermsw/show-hide-fragment-navigator)
+
 Navigation 使用 `FragmenManager.replace()` 来切换 fragment 导致上一个 fragment 会销毁,`ShowHideFragmentNavigator`基本和官方`FragmentNavigator`类似，但是使用了`FragmenManager.add()`和`FragmenManager.hide()`来切换fragment,并提供了设置默认fragment装换动画方法。
 
 #### 使用方法
