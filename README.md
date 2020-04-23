@@ -18,7 +18,7 @@ allprojects {
 ```
 
 ```groovy
-implementation 'com.github.olivermsw:show-hide-fragment-navigator:1.0.0'
+implementation 'com.github.olivermsw:show-hide-fragment-navigator:1.0.1'
 ```
 
 ```kotlin
